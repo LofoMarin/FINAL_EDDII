@@ -1,0 +1,43 @@
+Para la realizacion del mismo se uso el algortimo QuickSort, en python, se debe seguir estos pasos:
+
+1. Una matriz se divide en submatrices seleccionando un elemento pivote (elemento seleccionado de la matriz).
+
+2. Al dividir la matriz, el elemento pivote debe colocarse de forma que los elementos menores que el pivote se 
+mantengan en el lado izquierdo y los mayores que el pivote se encuentren en el lado derecho del mismo.
+Las submatrices de la izquierda y la derecha también se dividen con el mismo criterio. Este proceso continúa 
+hasta que cada submatriz contiene un solo elemento.
+
+3. En este punto, los elementos ya están ordenados. Finalmente, los elementos se combinan para formar una matriz 
+ordenada.
+
+La matriz dada por el ejercicio es [20,11, 15, 12, 3, 14, 9, 7, 6, 10, 36, 5, 52, 50].
+
+1. iteracion
+[20, 11, 15, 12, 3, 14, 9, 7, 6, 10, 36, 5, 50, 52]
+
+2. iteracion
+[3, 5, 15, 12, 20, 14, 9, 7, 6, 10, 36, 11, 50, 52]
+
+3. iteracion
+[3, 5, 9, 7, 6, 10, 11, 12, 20, 14, 36, 15, 50, 52]
+
+4. iteracion
+[3, 5, 9, 7, 6, 10, 11, 12, 20, 14, 36, 15, 50, 52]
+
+5. iteracion
+[3, 5, 6, 7, 9, 10, 11, 12, 20, 14, 36, 15, 50, 52]
+
+6. iteracion
+[3, 5, 6, 7, 9, 10, 11, 12, 20, 14, 36, 15, 50, 52]
+
+7. iteracion
+[3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 36, 20, 50, 52]
+
+8. iteracion
+[3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 36, 20, 50, 52]
+
+9. iteracion
+[3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 20, 36, 50, 52]
+
+Algoritmo final en Orden Ascendente:
+[3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 20, 36, 50, 52]
