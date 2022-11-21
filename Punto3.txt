@@ -1,0 +1,25 @@
+¿Qué relación existe entre el uso de sockets y threads? 
+Explique detalladamente y de un ejemplo donde se pueda apreciar su relación de existir. 
+Adicionalmente explique en que se diferencia y de un ejemplo donde se pueda apreciar sus diferencias.
+
+Respuesta:
+
+Se sabe que Thread, es ruta de ejecución del código. El código ejecutable es ejecutado por la CPU en un hilo. 
+El hilo debe tener uno y sólo un proceso porque el código del programa está en la memoria y el proceso es 
+la memoria. Un solo proceso puede tener varios hilos y socket es una estructura de programación utilizada para 
+definir la conexión con otro dispositivo. Tiene una IP y un puerto asociados. Cada vez que un programa necesita 
+una conexión con otro dispositivo debe utilizar el socket, primero crea un socket y lo rellena con datos, luego 
+llama a la función API para abrir la conexión. En la mayoría de las funciones de la API el socket se utiliza como 
+parámetro.
+
+Ejemplo, Un socket es un punto final de un enlace de comunicación bidireccional entre dos programas que se 
+ejecutan en la red. Un socket está vinculado a un número de puerto para que la capa TCP pueda identificar 
+la aplicación a la que están destinados los datos. Un endpoint es una combinación de una dirección IP y un 
+número de puerto, que puede ser usada con hilos, Y se usa Porque tu ordenador tiene más de un núcleo de CPU, 
+y quieres hacer uso de los núcleos adicionales. Un programa de un solo hilo sólo puede utilizar un único núcleo, 
+por lo que con una gran carga de trabajo tendrías un núcleo al 100%, y los otros núcleos sin utilizar y 
+desaprovechados, ejemplo mas claro seria un chat de servicio al cliente, servidor-cliente.
+
+la diferencia es que los sockets funcionan mas como un punto final para la comunicacion entre servidor-cliente, 
+y los threads son mas para subprocesos que ejecutan tareas como codigos.
+
